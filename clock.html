@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's about time</title>
+</head>
+<body>
+    
+    <div class="clock">
+    <div class="clockface">
+        <div class="seconds handle"></div>
+        <div class="minutes handle"></div>
+        <div class="hours handle"></div>
+         <div class="middle"></div>
+    </div>
+   
+    </div>
+
+    <style>
+    
+    html{
+        height: 100%;
+    }
+    body{
+         background-color:pink;
+         margin: 0;
+         height: 100%;
+        }
+        
+.clock{
+    width: 30rem;
+        height: 30rem;
+        opacity: 30%;
+        border: 20px;
+        border-style: solid;
+        border-color: rebeccapurple;
+        border-radius: 50%;
+        margin: 50px auto;
+        position: relative;
+        padding: 2rem;
+        background-color: purple;
+        
+}
+
+    .clockface{
+       border-radius: 50%;
+       background-color: purple;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(
+          -3px
+        );
+    }    
+    
+    .handle{
+        position: absolute;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        height: 5px;
+        width: 50%;
+        top: 50%;
+        background-color: salmon;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(0.5, -0.21, 0.61, 1.71)
+    }
+/* 
+    .middle{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        height: 5px;
+        width: 5px;
+        border: 6px;
+        border-radius: 50%;
+        background-color: salmon;
+        border-color: salmon;
+        border-style: solid;
+    } */
+
+        
+        </style>
+    <script src="./clock.js">
+
+    </script>
+</body>
+</html>
